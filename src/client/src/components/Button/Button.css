@@ -1,0 +1,58 @@
+/* button {
+    margin: 2px;
+    --border-width: 1.5px; 
+    --border-radius: 5px;
+    position: relative;
+    color: white;
+    background: var(--gradient);
+    font-size: 18px;
+    border: 0;
+    width: 126px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    z-index: 1;
+}
+
+button::before{
+    content: '';
+    display: block;
+    height: calc(100% - calc(var(--border-width) * 2));
+    width: calc(100% - calc(var(--border-width) * 2));
+    background: var(--dark-theme);
+    position: absolute;
+    top: var(--border-width);
+    left: var(--border-width);
+    border-radius: calc(var(--border-radius) - var(--border-width));
+    z-index: -1;
+} */
+
+/* .gradient-buton{
+    --border-width: 1.5px; 
+    --border-radius: 5px;
+    font-size: 18px;
+    color: var(--dark-theme);
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-text-stroke: 0 transparent;
+
+} */
+
+
+.c-button {
+    display: inline-block;
+    color: var(--primary);
+    background: var(--gradient-button);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 26px;
+    border-radius: 5px;
+    border: 1.5px solid transparent;
+    text-decoration: none;
+    background-origin: border-box;
+}
+
+.c-button--ghost {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }

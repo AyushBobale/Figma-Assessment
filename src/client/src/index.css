@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+  --dark-theme : #191919;
+  --primary : #fff;
+  --background : #050505;
+  --gradient-button : linear-gradient(91deg, #1BACF4 0%, #1AC7DA 47.47%, #1ADDC5 84.51%, #19EEB5 100.16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: var(--background);
+}

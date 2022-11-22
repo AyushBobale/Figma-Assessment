@@ -1,0 +1,23 @@
+.category-tab {
+    margin-right : 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 184px;
+    min-width: 184px;
+    background: linear-gradient(44.64deg, #1B1B1B -9.77%, #141414 48.47%, #0C0C0C 118.77%);
+    border: 0.5px solid rgba(25, 25, 25, 0.5);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    
+}
+
+.category-tab-text{
+    color: var(--primary);
+}
+
+.category-tab-icon{
+    color: var(--primary);
+}

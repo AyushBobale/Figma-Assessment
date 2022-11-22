@@ -1,0 +1,9 @@
+.category-tab-container {
+    display: flex;
+    width: 1472px;
+    margin : 2em;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    /* justify-content: space-between; */
+
+}
