@@ -2,11 +2,12 @@ import react from 'react';
 import './CategoryTabContainer.css'
 import CategoryTab from '../CategoryTab/CategoryTab';
 import { BsController } from 'react-icons/bs';
+import {IoGameController} from 'react-icons/io5';
 
 function CategoryTabContainer(){
     const tabProps = {
         text : 'Music',
-        icon : <BsController size={70}/>
+        icon : <IoGameController size={70}/>
 
     }
     return(

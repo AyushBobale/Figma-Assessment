@@ -39,20 +39,20 @@ button::before{
 
 
 .c-button {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     color: var(--primary);
     background: var(--gradient-button);
-    font-size: 12px;
-    font-weight: 500;
-    padding: 12px 26px;
+    font-size: var(--nav-size);
+    height: 50;
+    width: 150;
+    padding: 10px 25px;
     border-radius: 5px;
-    border: 1.5px solid transparent;
+    border: 1.5px solid var(--gradient-button);
     text-decoration: none;
-    background-origin: border-box;
+    /* background-clip: text; */
 }
 
-.c-button--ghost {
-    background: transparent;
-    color: var(--primary);
-    border-color: var(--primary);
-  }
+.c-button :first-child {
+    margin-right: 5px;
+}

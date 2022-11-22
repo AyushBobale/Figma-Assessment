@@ -1,10 +1,14 @@
-import react from 'react';
+import react, {useState} from 'react';
 import './Navbar.css'
 import Button from '../Button/Button.js';
+import SearchBar from '../SearchBar/SearchBar.js';
+import HamMenu from '../HamMenu/HamMenu.js';
 import logo from '../../assets/images/logosample 1.png';
 
 import { BsFillGeoAltFill, BsFillCartFill } from 'react-icons/bs';
 import { HiMenu } from 'react-icons/hi';
+import {IoSearch, IoCloseSharp} from 'react-icons/io5';
+
 
 function Navbar(props){
     const locButtonProps = {
@@ -25,6 +29,39 @@ function Navbar(props){
         fill : true
       }
 
+      const searchBarProps = {
+        placeHolder : 'Search Products',
+        icon : <IoSearch size={30}/>,
+        products : [
+            'Playstation',
+            'PS4',
+            'PS5',
+            'Xbox',
+            'Go Pro',
+            'Lenovo Laptop',
+            'Monitor',
+            'PC',
+            'RAM',
+            'CPU',
+            'MotherBoard',
+            'Playstation',
+            'PS4',
+            'PS5',
+            'Xbox',
+            'Go Pro',
+            'Lenovo Laptop',
+            'Monitor',
+            'PC',
+            'RAM',
+            'CPU',
+            'MotherBoard',
+          ]
+      }
+
+    const [sideMenu, setSideMenu] = useState(false);
+    const showSideBar = () => setSideMenu(!sideMenu);
+
+    console.log(sideMenu);
     return(
         <nav className='main-nav'>
             <div className='logo'>
@@ -33,23 +70,24 @@ function Navbar(props){
 
             <div className='search-bar-desktop'>
                 <Button  {...locButtonProps}/>
+                <SearchBar {...searchBarProps}/>
                 <Button  {...cartButtonProps}/>
                 <Button  {...loginButtonProps}/>
             </div>
             
             <div className='search-bar-tab'>
-                tab
+                <SearchBar {...searchBarProps}/>
             </div>
 
             <div className='search-bar-mobile'>
-                phone
+                <SearchBar {...searchBarProps}/>
             </div>
-
-            <HiMenu size={50}/>
-
             
-
-            {/* <div className='dropdown-menu'></div> */}
+            <a onClick={showSideBar} className='side-bar'>
+                {!sideMenu && <HiMenu size={40}/>}
+                {sideMenu && <IoCloseSharp size={40}/>}
+            </a>
+            <HamMenu hide = {sideMenu}/>
         </nav>
     )
 }
