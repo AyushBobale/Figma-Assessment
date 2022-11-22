@@ -1,4 +1,3 @@
-import react from 'react'
 import './Button.css'
 
 function Button(props) {

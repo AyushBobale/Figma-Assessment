@@ -7,6 +7,9 @@
   --primary-size: 16px;
   --nav-size : var(--primary-size);
   --gradient-button : linear-gradient(91deg, #1BACF4 0%, #1AC7DA 47.47%, #1ADDC5 84.51%, #19EEB5 100.16%);
+  --desktop-width : 85%;
+  --tab-width : 90%;
+  --mobile-width : 95%;
 }
 
 * {

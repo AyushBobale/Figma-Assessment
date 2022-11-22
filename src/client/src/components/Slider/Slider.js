@@ -1,4 +1,3 @@
-import react, { useState } from "react";
 import './Slider.css'
 import Slide from "../Slide/Slide.js";
 

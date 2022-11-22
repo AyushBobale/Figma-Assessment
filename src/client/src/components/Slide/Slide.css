@@ -1,12 +1,13 @@
 .slide {
-    width: 1472px;
-    height: 574px;
+    width: 100%;
+    height: auto;
     background-position: center;
     
 }
 
 .slide > img {
     border-radius: 15px;
-    width: 1472px;
-    height: 574px;
+    width: 100%;
+    height: auto;
+
 }

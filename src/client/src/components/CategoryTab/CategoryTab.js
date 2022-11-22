@@ -1,4 +1,3 @@
-import react from 'react';
 import './CategoryTab.css'
 
 function CategoryTab(props) {

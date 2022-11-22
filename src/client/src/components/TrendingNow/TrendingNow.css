@@ -1,25 +1,30 @@
-.slider {
+.trending {
     display: flex;
-    justify-content: center;
-    margin : 2em;
+    color: var(--primary);
+    justify-content: space-between;
     width: var(--desktop-width);
+    font-size: 42px;
+    margin: 50px 0px;
+}
+
+.trend-btn > *{
+    margin-left: 32px;
 }
 
 @media (min-width: 1328px) {
-    .slider{
+    .trending{
         width: var(--desktop-width);
     }
 }
 
 @media (max-width: 1328px){
-    .slider{
+    .trending{
         width: var(--tab-width);
     }
 }
 
 @media (max-width : 834px){
-    .slider{
+    .trending{
         width: var(--mobile-width);
     }
 } 
-

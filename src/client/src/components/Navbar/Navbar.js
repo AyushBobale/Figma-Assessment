@@ -1,4 +1,4 @@
-import react, {useState} from 'react';
+import {useState} from 'react';
 import './Navbar.css'
 import Button from '../Button/Button.js';
 import SearchBar from '../SearchBar/SearchBar.js';
@@ -28,34 +28,42 @@ function Navbar(props){
         icon : null,
         fill : true
       }
+    
+      const products = [
+        'Playstation',
+        'PS4',
+        'PS5',
+        'Xbox',
+        'Go Pro',
+        'Lenovo Laptop',
+        'Monitor',
+        'PC',
+        'RAM',
+        'CPU',
+        'MotherBoard',
+        'Playstation',
+        'PS4',
+        'PS5',
+        'Xbox',
+        'Go Pro',
+        'Lenovo Laptop',
+        'Monitor',
+        'PC',
+        'RAM',
+        'CPU',
+        'MotherBoard',
+      ]
+
+      const searchBarPropsMobile = {
+        placeHolder : '',
+        icon : <IoSearch size={30}/>,
+        products : products
+      }
 
       const searchBarProps = {
         placeHolder : 'Search Products',
         icon : <IoSearch size={30}/>,
-        products : [
-            'Playstation',
-            'PS4',
-            'PS5',
-            'Xbox',
-            'Go Pro',
-            'Lenovo Laptop',
-            'Monitor',
-            'PC',
-            'RAM',
-            'CPU',
-            'MotherBoard',
-            'Playstation',
-            'PS4',
-            'PS5',
-            'Xbox',
-            'Go Pro',
-            'Lenovo Laptop',
-            'Monitor',
-            'PC',
-            'RAM',
-            'CPU',
-            'MotherBoard',
-          ]
+        products : products
       }
 
     const [sideMenu, setSideMenu] = useState(false);
@@ -80,7 +88,7 @@ function Navbar(props){
             </div>
 
             <div className='search-bar-mobile'>
-                <SearchBar {...searchBarProps}/>
+                <SearchBar {...searchBarPropsMobile}/>
             </div>
             
             <a onClick={showSideBar} className='side-bar'>

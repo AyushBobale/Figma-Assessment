@@ -1,4 +1,3 @@
-import react from "react";
 import './HamMenu.css'
 
 function HamMenu(props) {

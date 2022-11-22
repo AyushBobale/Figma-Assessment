@@ -1,4 +1,3 @@
-import react from 'react';
 import './CategoryTabContainer.css'
 import CategoryTab from '../CategoryTab/CategoryTab';
 import { BsController } from 'react-icons/bs';
