@@ -1,6 +1,8 @@
 import './ItemCard.css'
 import {BsTruck} from 'react-icons/bs';
 
+import { useState, useEffect } from 'react';
+
 import image1 from'../../assets/images/items/item1 (2).png'
 import image2 from'../../assets/images/items/item1 (3).png'
 import image3 from'../../assets/images/items/item1 (4).png'

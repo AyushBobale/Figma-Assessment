@@ -1,9 +1,32 @@
 .slider {
     display: flex;
+    position: relative;
     justify-content: center;
     margin : 2em;
     width: var(--desktop-width);
 }
+
+.bottom-btn {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    color: var(--primary);
+    font-size: 50px;
+    z-index: 2;
+}
+
+.bottom-bar{
+    margin: 0px 5px;
+}
+
+.bottom-bar > input{
+    display: none;
+}
+
+.radio-btn:checked ~ label {
+    color: rgb(120, 120, 120);
+  }
+
 
 @media (min-width: 1328px) {
     .slider{

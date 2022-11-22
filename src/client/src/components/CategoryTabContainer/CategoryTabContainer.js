@@ -1,7 +1,7 @@
 import './CategoryTabContainer.css'
 import CategoryTab from '../CategoryTab/CategoryTab';
 import { BsController } from 'react-icons/bs';
-import {IoGameController} from 'react-icons/io5';
+import {IoGameController, IoChevronBackSharp, IoChevronForwardSharp} from 'react-icons/io5';
 
 function CategoryTabContainer(){
     const tabProps = {
@@ -9,23 +9,40 @@ function CategoryTabContainer(){
         icon : <IoGameController size={70}/>
 
     }
-    return(
-        <div className='category-tab-container'>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
-            <CategoryTab {...tabProps}/>
 
+    const slideLeft = () => {
+        var slider = document.getElementById("category-tab-slider");
+        slider.scrollLeft  = slider.scrollLeft - 300
+        console.log('test right')
+    }
+
+    const slideRight = () => {
+        var slider = document.getElementById("category-tab-slider");
+        slider.scrollLeft  = slider.scrollLeft + 300
+        console.log('test right')
+    }
+
+    return(
+        <div className='category-tab-parent'>
+            <IoChevronBackSharp className='active' size={35} onClick={slideLeft}/>
+            <div className='category-tab-container' id='category-tab-slider'>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+                <CategoryTab {...tabProps}/>
+            </div>
+            <IoChevronForwardSharp className='active' size={35} onClick={slideRight}/>
         </div>
+
     )
 }
 

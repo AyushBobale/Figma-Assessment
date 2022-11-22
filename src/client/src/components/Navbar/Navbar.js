@@ -69,7 +69,6 @@ function Navbar(props){
     const [sideMenu, setSideMenu] = useState(false);
     const showSideBar = () => setSideMenu(!sideMenu);
 
-    console.log(sideMenu);
     return(
         <nav className='main-nav'>
             <div className='logo'>

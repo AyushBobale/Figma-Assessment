@@ -7,7 +7,9 @@
 
 .slide > img {
     border-radius: 15px;
-    width: 100%;
     height: auto;
 
+}
+.slide-img {
+    width: 100%;
 }

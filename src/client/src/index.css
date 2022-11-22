@@ -10,6 +10,8 @@
   --desktop-width : 85%;
   --tab-width : 90%;
   --mobile-width : 95%;
+  --mobile-size : 834px;
+  --tab-size: 1328px;
 }
 
 * {

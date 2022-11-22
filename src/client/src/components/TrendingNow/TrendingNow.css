@@ -6,25 +6,41 @@
     font-size: 42px;
     margin: 50px 0px;
 }
+.trend-btn{
+    display: inline;
+}
 
 .trend-btn > *{
     margin-left: 32px;
 }
 
+
 @media (min-width: 1328px) {
     .trending{
         width: var(--desktop-width);
+        font-size: 42px;
+    }
+    .trend-btn{
+        display: inline;
     }
 }
 
 @media (max-width: 1328px){
     .trending{
         width: var(--tab-width);
+        font-size: 34px;
+    }
+    .trend-btn{
+        display: none;
     }
 }
 
 @media (max-width : 834px){
     .trending{
         width: var(--mobile-width);
+        font-size: 22px;
+    }
+    .trend-btn{
+        display: none;
     }
 } 
