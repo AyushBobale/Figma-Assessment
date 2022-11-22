@@ -9,6 +9,8 @@
     display: none;
     right: 0;
     top: 112px;
+
+    z-index: 20;
 }
 
 .side-menu-item{
@@ -22,7 +24,7 @@
     background-clip: text;
 }
 
-.active {
+.side-menu-active {
     display: inline;
 }
 
